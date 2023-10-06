@@ -13,10 +13,10 @@ import {
   scale,
   verticalScale,
 } from 'react-native-size-matters';
-import { useNavigation } from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
 
 const QrCodeScanner = () => {
-  const navigation=useNavigation()
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -56,19 +56,26 @@ const QrCodeScanner = () => {
         </Text>
         <View>
           <FlatList
-           horizontal
-           showsHorizontalScrollIndicator={false}
-           contentContainerStyle={{marginBottom:moderateVerticalScale(20),marginTop:moderateVerticalScale(20)}}
-            data={[1, 1, , 1, 1, 1]}
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={{
+              marginBottom: moderateVerticalScale(20),
+              marginTop: moderateVerticalScale(20),
+            }}
+            data={[1, 1, 1, 1, 1, 1]}
             renderItem={({item, index}) => {
               return (
                 <View style={styles.recentItem}>
-                  <TouchableOpacity style={styles.nameView} onPress={()=>{
-navigation.navigate("PayNow")
-                  }}>
-                    <Text style={styles.nameChar}>{index==0?"A":index==1?"B":"C"}</Text>
+                  <TouchableOpacity
+                    style={styles.nameView}
+                    onPress={() => {
+                      navigation.navigate('PayNow');
+                    }}>
+                    <Text style={styles.nameChar}>
+                      {index == 0 ? 'A' : index == 1 ? 'B' : 'C'}
+                    </Text>
                   </TouchableOpacity>
-                  <Text style={styles.name}>{"Ankit"}</Text>
+                  <Text style={styles.name}>{'Ankit'}</Text>
                 </View>
               );
             }}
@@ -129,23 +136,22 @@ const styles = StyleSheet.create({
     height: scale(50),
     borderRadius: scale(25),
     backgroundColor: 'yellow',
-    justifyContent:'center',
-    alignItems:'center'
+    justifyContent: 'center',
+    alignItems: 'center',
   },
-  recentItem:{
-    marginLeft:moderateScale(20),
-    alignItems:'center'
+  recentItem: {
+    marginLeft: moderateScale(20),
+    alignItems: 'center',
   },
-  nameChar:{
-    fontSize:30,
-    fontWeight:'600',
-    color:'black',
-    
+  nameChar: {
+    fontSize: 30,
+    fontWeight: '600',
+    color: 'black',
   },
-  name:{
-    marginTop:moderateVerticalScale(5),
-    color:'white',
-    fontWeight:'600',
-    fontSize:18
-  }
+  name: {
+    marginTop: moderateVerticalScale(5),
+    color: 'white',
+    fontWeight: '600',
+    fontSize: 18,
+  },
 });

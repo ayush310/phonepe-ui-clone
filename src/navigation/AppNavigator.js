@@ -1,4 +1,3 @@
-import {View, Text} from 'react-native';
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
@@ -22,12 +21,12 @@ const AppNavigator = () => {
           component={QrCodeScanner}
           options={{headerShown: false}}
         />
-          <stack.Screen
+        <stack.Screen
           name="PayNow"
           component={PayNow}
           options={{headerShown: false}}
         />
-         <stack.Screen
+        <stack.Screen
           name="UPIPass"
           component={UPIPass}
           options={{headerShown: false}}
