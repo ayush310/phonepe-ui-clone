@@ -66,17 +66,18 @@ const History = () => {
                       />
                     </View>
                     <View style={{marginLeft: moderateScale(10)}}>
-                      <Text style={styles.paidTo}>paid to</Text>
+                      <Text style={styles.paidTo}>
+                        {index % 2 === 1 ? 'Payment from' : 'Paid to'}
+                      </Text>
                       <Text style={styles.name}>Gaurav</Text>
                     </View>
                   </View>
-                  <Text style={styles.time}>Yesterday</Text>
                 </View>
                 <View style={{alignItems: 'flex-end'}}>
                   <Text style={styles.amount}>{' ₹ 10000'}</Text>
                   <View style={styles.bankView}>
                     <Text style={[styles.time, {marginTop: 0}]}>
-                      {index % 2 == 0 ? 'debited from' : 'credited to'}
+                      {index % 2 === 0 ? 'Debited from' : 'Credited to'}
                     </Text>
                     <Image
                       source={require('../images/bank_logo.png')}

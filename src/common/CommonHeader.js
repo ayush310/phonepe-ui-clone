@@ -52,9 +52,10 @@ export default CommonHeader;
 const styles = StyleSheet.create({
   header: {
     width: '100%',
-    height: verticalScale(53),
+    height: verticalScale(57),
     backgroundColor: 'purple',
     justifyContent: 'flex-end',
+    marginTop: 35,
   },
   header2: {
     width: '100%',

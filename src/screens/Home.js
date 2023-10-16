@@ -74,21 +74,21 @@ const Home = () => {
               source={require('../images/wallet.png')}
               style={styles.icons}
             />
-            <Text style={styles.otherOptionText}>PhonePe Wallet</Text>
+            <Text style={styles.otherOptionText}> Wallet</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.otherOptionTab}>
             <Image
               source={require('../images/gift.png')}
               style={styles.icons}
             />
-            <Text style={styles.otherOptionText}>PhonePe Wallet</Text>
+            <Text style={styles.otherOptionText}>Rewards</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.otherOptionTab}>
             <Image
               source={require('../images/speaker.png')}
               style={styles.icons}
             />
-            <Text style={styles.otherOptionText}>Refer & Get 100</Text>
+            <Text style={styles.otherOptionText}>Refer & Earn</Text>
           </TouchableOpacity>
         </View>
         <View
@@ -205,6 +205,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#f2f2f2',
+    // marginTop: 3,
   },
 
   icons: {
@@ -289,7 +290,7 @@ const styles = StyleSheet.create({
   },
   moneyTransferCard: {
     width: '94%',
-    height: verticalScale(130),
+    height: verticalScale(110),
     backgroundColor: 'white',
     alignSelf: 'center',
     marginTop: moderateVerticalScale(10),
@@ -360,7 +361,7 @@ const styles = StyleSheet.create({
     borderRadius: moderateScale(5),
     marginTop: moderateVerticalScale(10),
     alignSelf: 'center',
-    height: verticalScale(230),
+    height: verticalScale(180),
     width: '94%',
   },
 });

@@ -228,7 +228,7 @@ const styles = StyleSheet.create({
   },
   categoryCard: {
     width: '94%',
-    height: verticalScale(200),
+    height: verticalScale(170),
     alignSelf: 'center',
     backgroundColor: 'white',
     marginTop: moderateVerticalScale(10),
