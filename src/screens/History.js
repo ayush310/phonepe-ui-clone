@@ -67,7 +67,7 @@ const History = () => {
                     </View>
                     <View style={{marginLeft: moderateScale(10)}}>
                       <Text style={styles.paidTo}>
-                        {index % 2 === 1 ? 'Payment from' : 'Paid to'}
+                        {index % 2 === 1 ? 'Received from' : 'Paid to'}
                       </Text>
                       <Text style={styles.name}>Gaurav</Text>
                     </View>

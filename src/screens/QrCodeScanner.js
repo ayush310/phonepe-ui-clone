@@ -75,7 +75,9 @@ const QrCodeScanner = () => {
                       {index == 0 ? 'A' : index == 1 ? 'B' : 'C'}
                     </Text>
                   </TouchableOpacity>
-                  <Text style={styles.name}>{'Ankit'}</Text>
+                  <Text style={styles.name}>
+                    {index == 0 ? 'Ankit' : index == 1 ? 'Bhavya' : 'Chandan'}
+                  </Text>
                 </View>
               );
             }}
