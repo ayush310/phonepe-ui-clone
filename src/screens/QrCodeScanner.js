@@ -17,6 +17,7 @@ import {useNavigation} from '@react-navigation/native';
 
 const QrCodeScanner = () => {
   const navigation = useNavigation();
+
   return (
     <View style={styles.container}>
       <View style={styles.header}>
